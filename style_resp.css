@@ -1,0 +1,18 @@
+@media (max-width: 900px) {
+  div#content{
+    margin: 0 20vw 20vw 20vw;
+  }
+
+  div#content div{
+    width: 40%;
+  }
+
+  div#content div a img{
+    width: 12vw;
+    height: 12vw;
+  }
+
+  div#content div a p{
+    font-size: 2vh;
+  }
+}
