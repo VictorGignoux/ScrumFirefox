@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="https://forge.iut-larochelle.fr/vgignoux.gitlab.io/scrumfirefox/style.css">
+    <link rel="stylesheet" type="text/css" href="buttons.css">
+    <link rel="icon" type="image/png" href="firefoxIcon.png" />
+    <script src="actions.js" defer></script>
+    <title>Scrum Firefox</title>
+</head>
+<body onload="setup()">
+    <button id="colorsButton" type="button" onclick="randomTheme()">CLIQUE ICI TKT</button>
+
+    <div id="buttonsContainer">
+        <button id="green" type="button" onclick="changeTheme(thm_green)"></button>
+        <button id="blue" type="button" onclick="changeTheme(thm_blue)"></button>
+        <button id="purple" type="button" onclick="changeTheme(thm_purple)"></button>
+        <button id="orange" type="button" onclick="changeTheme(thm_orange)"></button>
+        <button id="exotic" type="button" onclick="changeTheme(thm_exotic)"></button>
+    </div>
+   
+
+    <div id="title">
+        <h1>Scrum Firefox</h1>
+        <p>( Soyez Agiles ! )</p>
+    </div>
+
+    <form action="https://www.google.com/search" method="get">
+        <input id="maRecherche" type="text" name="q" placeholder="Tapez votre recherche ici..." required>
+    </form>
+
+    <div id="content">
+
+        <div>
+            <a href="https://forge.iut-larochelle.fr/vgignoux.gitlab.io/scrumfirefox/firefoxHomePage.html" target="_blank">
+                <img src="firefoxIcon.png">
+                <p>NOUVELLE SCRUM PAGE</p>
+            </a>
+        </div>
+
+        <div>
+            <a href="https://www.google.fr/">
+                <img src="google.svg" alt="google favicon">
+                <p>SCRUM GOOGLE</p>
+            </a>
+        </div>
+
+        <div>
+            <a href="https://laposte.net/accueil">
+                <img src="https://static-web-mail.laposte.net/12.0.3-LPN.0.1/app/imgs/favicons/196x196.png" alt="laposte mail favicon">
+                <p>SCRUMAIL</p>
+            </a>
+        </div>
+
+        <div>
+            <a href="https://gemini.google.com/app">
+                <img src="https://www.gstatic.com/lamda/images/gemini_sparkle_v002_d4735304ff6292a690345.svg" alt="gemini favicon">
+                <p>SCRUM GEMINI</p>
+            </a>
+        </div>
+
+        <div>
+            <a href="https://chatgpt.com/">
+                <img src="https://cdn.oaistatic.com/assets/favicon-o20kmmos.svg">
+                <p>SCRUM CHATGPT</p>
+            </a>
+        </div>
+
+        <div>
+            <a href="https://ent.univ-lr.fr">
+                <img src="https://entfront.univ-lr.fr/uPortal/media/LRU/img/logo-square.svg" alt="ent lr favicon">
+                <p>SCRUM IUT</p>
+            </a>
+        </div>
+
+        <div>
+            <a href="https://forge.iut-larochelle.fr">
+                <img src="https://images.ctfassets.net/xz1dnu24egyd/3FbNmZRES38q2Sk2EcoT7a/a290dc207a67cf779fc7c2456b177e9f/press-kit-icon.svg" alt="git lab favicon">
+                <p>SCRUM GIT LAB</p>
+            </a>
+        </div>
+
+        <div>
+            <a href="https://teams.microsoft.com/v2/?clientexperience=t2">
+                <img src="teams.png">
+                <p>SCRUM TEAMS</p>
+            </a>
+        </div>
+
+        <div>
+            <a href="https://github.com/">
+                <img src="https://github.com/fluidicon.png" alt="git bug favicon">
+                <p>SCRUM GIT HUB</p>
+            </a>
+        </div>
+
+        <div>
+            <a href="https://www.scrum.org//">
+                <img src="https://static.scrum.org/web/images/favicons/safari-pinned-tab.svg">
+                <p>SCRUM</p>
+            </a>
+        </div>
+
+    </div>
+
+    <footer>
+        <p>Si TOI aussi tu veux rejoindre la SCRUM TEAM clique sur le lien MAINTENANT et télécharge le SCRUMANUEL qui te fera devenir un vrai SCRUM MASTER !!!</p>
+        <a href="https://www.wrike.com/project-management-guide/faq/how-to-become-a-scrum-master-in-7-simple-steps/">-> le lien <-</a>
+    </footer>
+</body>
+</html>
