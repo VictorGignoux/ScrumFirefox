@@ -1,12 +1,17 @@
 @font-face {
   font-family: 'TransMovie';
-  src: url('transMovie.ttf') format('truetype');
+  src: url('../font/transMovie.ttf') format('truetype');
 }
 
 @font-face {
   font-family: 'Nexa';
-  src: url('Nexa-Heavy.ttf');
+  src: url('../font/Nexa-Heavy.ttf');
 }
+
+/*@font-face{
+	font-family: 'abs';
+	src: url('absender1.ttf');
+}*/
 
 html {
 	--bg:						#18534F;
