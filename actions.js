@@ -1,5 +1,11 @@
 var isButtonsShown = false;
 
+/*var audios = ["audios/lescheu.mp3"];
+
+var links = ["lescheu"];
+
+const audio = new Audio("audios/lescheu_1.mp3");*/
+
 /* THEME COLORS
 bg
 bg_bis
@@ -68,3 +74,12 @@ function couleurHexa() {
 function setup() {
     document.getElementById("maRecherche").focus();
 }
+
+// acivation de sons au clic des liens
+/*for(let i = 0; i < links.lenght;i++)
+{
+    document.getElementById(links[i]).addEventListener('click', function(event) {
+        event.preventDefault(); // Empêche le comportement par défaut du lien
+        document.getElementById(audios[i]).play(); // Joue le son
+    });
+}*/
