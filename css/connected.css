@@ -157,7 +157,6 @@ a{
 	position: fixed;
 	bottom: 4vh;
 	right: 2vw;
-	font-family: Nexa;
 	background-color: var(--title);
 	color: var(--title-shadow);
 	padding: 1.5vh;

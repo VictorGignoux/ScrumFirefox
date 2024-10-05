@@ -23,13 +23,16 @@ var thm_green = ["#18534F", "#1D6E68", "#76B2AE", "#FEEAA1", "#2e4240", "#D6955B
 var thm_blue = ["#1C2942", "#3B556D", "#496c8c", "#5FC2BA", "#FFFFFF", "#d2cccc", "#0B162C"];
 
 /* theme violet */
-var thm_purple = ["#96527A", "#CD6889", "#d58ba3", "#FE895E", "#4c291c", "#F99F72", "#5B374D"];
+var thm_purple = ["#96527A", "#CD6889", "#d58ba3", "#971854", "#4c291c", "#f89cf6", "#5B374D"];
 
 /* theme orange */
 var thm_orange = ["#FD9D4E", "#EED281", "#e8d394", "#F5432D", "#7e2e25", "#F3F3AE", "#010122"];
 
 /* theme exotic */
 var thm_exotic = ["#59D189", "#A7F578", "#e8d394", "#FF9179", "#7e2e25", "#FFD472", "#ED584C"];
+
+/* theme connected */
+var thm_connect = ["#9c0800", "#da2b31", "#ef2b31", "#e95a26", "#663320", "#e9ab7d", "#4F0002"];
 
 function changeTheme(theme) {
     document.documentElement.style.setProperty('--bg', theme[0]);
@@ -73,6 +76,7 @@ function couleurHexa() {
 
 function setup() {
     document.getElementById("maRecherche").focus();
+    changeTheme(thm_green);
 }
 
 // acivation de sons au clic des liens

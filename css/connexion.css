@@ -1,0 +1,97 @@
+@font-face {
+  font-family: 'TransMovie';
+  src: url('../font/transMovie.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Nexa';
+  src: url('../font/Nexa-Heavy.ttf');
+}
+
+@font-face{
+	font-family: 'abs';
+	src: url('../font/absender1.ttf');
+}
+
+html {
+	--bg:						#18534F;
+	--bgbis:				#1D6E68;
+  --shadow: 			#76B2AE;
+  --title:				#FEEAA1;
+  --srch-txt:			#2e4240;
+  --title-shadow: #D6955B;
+  --footer:				#171F26;
+}
+
+body{
+	padding: 0;
+	margin: 0;
+	background-color: var(--bg);
+}
+
+#title{
+	padding-bottom: 2vh;
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	padding: 2vh;
+}
+
+#title img{
+	width: 4vh;
+	height: 4vh;
+	padding-right: 1vh;
+}
+
+div#title h1{
+	margin: 0;
+	padding: 0;
+	
+	font-size: 3.5vh;
+	font-family: TransMovie;
+	letter-spacing: 2px;
+
+	color: var(--title);
+	text-shadow	: var(--title-shadow) 2px 2px;
+}
+
+#content{
+	display: flex;
+	justify-content: center;
+}
+
+#content form{
+	padding: 3vh;
+	margin-top: 20vh;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+
+form p{
+	color: var(--title);
+	font-family: Nexa;
+	font-size: 2vh;
+	margin: 0;
+}
+
+#mdp {
+	width: 40vw;
+  padding: 3vh;
+  border: 0px;
+  border-radius: 5px;
+  background-color: var(--bgbis);
+  color: var(--srch-txt);
+  transition: 0.2s;
+}
+
+#mdp:hover{
+	background-color: var(--shadow);
+	box-shadow: 0 0 1em var(--shadow);
+	transition: 0.2s;
+}
+
+#mdp:focus{
+	background-color: var(--shadow);
+	box-shadow: 0 0 1em var(--shadow);
+}
