@@ -8,19 +8,19 @@
   src: url('../font/Nexa-Heavy.ttf');
 }
 
-/*@font-face{
+@font-face{
 	font-family: 'abs';
 	src: url('absender1.ttf');
-}*/
+}
 
 html {
-	--bg:						#18534F;
-	--bgbis:				#1D6E68;
-  --shadow: 			#76B2AE;
-  --title:				#FEEAA1;
-  --srch-txt:			#2e4240;
-  --title-shadow: #D6955B;
-  --footer:				#171F26;
+	--bg:						#313131;
+	--bgbis:				#444444;
+  --shadow: 			#586881;
+  --title:				#2e6cd0;
+  --srch-txt:			#282828;
+  --title-shadow: #91a8cd;
+  --footer:				#0b0e1b;
 }
 
 body{

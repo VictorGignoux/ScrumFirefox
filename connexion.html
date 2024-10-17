@@ -5,22 +5,23 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="css/connexion.css">
     <link rel="stylesheet" type="text/css" href="css/style_resp.css">
-    <link rel="stylesheet" type="text/css" href="css/buttons.css">
     <link rel="icon" type="image/png" href="img/firefoxIcon.png">
     <script src="actions.js" defer></script>
     <title>Scrum Firefox</title>
 </head>
-<body onload="changeTheme(thm_connect)">
+<body onload="checkInput()">
    
     <div id="title">
-        <img src="img/firefoxIcon.png">
-        <h1>Scrum Firefox</h1>
+        <a href="index.html">
+            <img src="img/firefoxIcon.png">
+            <h1>Scrum Firefox</h1>
+        </a>
     </div>
 
     <div id="content">
         <form>
             <p>MOT DE PASSE</p>
-            <input id="mdp" type="text" name="s" required>
+            <input id="mdp" type="password" name="s" required>
         </form>
     </div>
 

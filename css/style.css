@@ -8,10 +8,10 @@
   src: url('../font/Nexa-Heavy.ttf');
 }
 
-/*@font-face{
+@font-face{
 	font-family: 'abs';
 	src: url('absender1.ttf');
-}*/
+}
 
 html {
 	--bg:						#18534F;
@@ -151,22 +151,4 @@ footer a:hover{
 
 a{
 	text-decoration: none;
-}
-
-#MasterMode{
-	position: fixed;
-	bottom: 4vh;
-	right: 2vw;
-	font-family: Nexa;
-	background-color: var(--title);
-	color: var(--title-shadow);
-	padding: 1.5vh;
-	border-radius: 10px;
-	transition: 0.3s;
-}
-
-#MasterMode:hover{
-	background-color: var(--title-shadow);
-	color: var(--title);
-	transition: 0.3s;
 }

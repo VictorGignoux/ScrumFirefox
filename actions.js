@@ -6,15 +6,12 @@ var links = ["lescheu"];
 
 const audio = new Audio("audios/lescheu_1.mp3");*/
 
+const scrum = "341935233539371";
+const abc = "azertyuiopqsdfghjklmwxcvbn";
+const droptable = 5;
+
 /* THEME COLORS
-bg
-bg_bis
-shadows * from bg_bis
-title
-srch_txt * from title
-title_shadow
-footer
-*/
+var theme = ["bg","bg_bis","shadows * from bg_bis","title","srch_txt * from title","title_shadow","footer"]*/
 
 /* theme vert de base */
 var thm_green = ["#18534F", "#1D6E68", "#76B2AE", "#FEEAA1", "#2e4240", "#D6955B", "#171F26"];
@@ -32,7 +29,7 @@ var thm_orange = ["#FD9D4E", "#EED281", "#e8d394", "#F5432D", "#7e2e25", "#F3F3A
 var thm_exotic = ["#59D189", "#A7F578", "#e8d394", "#FF9179", "#7e2e25", "#FFD472", "#ED584C"];
 
 /* theme connected */
-var thm_connect = ["#9c0800", "#da2b31", "#ef2b31", "#e95a26", "#663320", "#e9ab7d", "#4F0002"];
+var thm_connect = ["#313131", "#444444", "#ef2b31", "#e95a26", "#663320", "#e9ab7d", "#4F0002"];
 
 function changeTheme(theme) {
     document.documentElement.style.setProperty('--bg', theme[0]);
@@ -74,9 +71,8 @@ function couleurHexa() {
     return `#${rouge}${vert}${bleu}`;
 }
 
-function setup() {
-    document.getElementById("maRecherche").focus();
-    changeTheme(thm_green);
+function activeInput(input) {
+    document.getElementById(input).focus();
 }
 
 // acivation de sons au clic des liens
@@ -87,3 +83,41 @@ function setup() {
         document.getElementById(audios[i]).play(); // Joue le son
     });
 }*/
+
+function checkInput() {
+    activeInput('mdp');
+    let input = document.getElementById('mdp');
+    input.addEventListener('input', function() {
+        if(input.value == 'gestion'){
+            window.location = '../GestWeb/index.html';
+        }
+        else{
+            if(qwack(input.value)){
+                input.style.backgroundColor = "#16af1c";
+                window.location.href = 'masterMode.html';
+            }
+            else{
+                input.style.backgroundColor = "#af1816";
+            }
+        }
+    });
+}
+
+function qwack(blop){
+    if(blop.length == droptable){
+        let i = 0;
+        let ship = false;
+        while(!ship && i < blop.length){
+            ship = blop[i] == abc[scrum[i * 3] * scrum[i * 3 + 1] - scrum[i * 3 + 2]];
+            i++;
+        }
+        return ship;
+    }
+    else{
+        return false;
+    }
+}
+
+function activeListener(){
+    document.getElementById('')
+}

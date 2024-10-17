@@ -1,5 +1,5 @@
 #buttonsContainer{
-	position: absolute;
+	position: fixed;
 	top: 4vh;
 	left: -8.5vh;
 	padding: 1vh;
@@ -69,4 +69,22 @@ button:hover{
 
 #exotic{
 	background-color: #A7F578;
+}
+
+#MasterMode{
+	position: fixed;
+	bottom: 4vh;
+	right: 2vw;
+	font-family: Nexa;
+	background-color: var(--title);
+	color: var(--title-shadow);
+	padding: 1.5vh;
+	border-radius: 10px;
+	transition: 0.3s;
+}
+
+#MasterMode:hover{
+	background-color: var(--title-shadow);
+	color: var(--title);
+	transition: 0.3s;
 }

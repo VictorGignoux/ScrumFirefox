@@ -14,13 +14,13 @@
 }
 
 html {
-	--bg:						#18534F;
-	--bgbis:				#1D6E68;
-  --shadow: 			#76B2AE;
-  --title:				#FEEAA1;
-  --srch-txt:			#2e4240;
-  --title-shadow: #D6955B;
-  --footer:				#171F26;
+	--bg:						#313131;
+	--bgbis:				#444444;
+  --shadow: 			#586881;
+  --title:				#2e6cd0;
+  --srch-txt:			#282828;
+  --title-shadow: #91a8cd;
+  --footer:				#af1816;
 }
 
 body{
@@ -29,12 +29,19 @@ body{
 	background-color: var(--bg);
 }
 
-#title{
+#title a{
 	padding-bottom: 2vh;
 	display: flex;
 	flex-direction: row;
 	align-items: center;
+	text-decoration: none;
 	padding: 2vh;
+}
+
+#title a:hover h1{
+	color: var(--title-shadow);
+	text-shadow	: var(--title) -2px -2px;
+	transition: 0.2s;
 }
 
 #title img{
@@ -47,12 +54,13 @@ div#title h1{
 	margin: 0;
 	padding: 0;
 	
-	font-size: 3.5vh;
+	font-size: 4vh;
 	font-family: TransMovie;
 	letter-spacing: 2px;
 
 	color: var(--title);
-	text-shadow	: var(--title-shadow) 2px 2px;
+	text-shadow	: var(--title-shadow) 1px 1px;
+	transition: 0.2s;
 }
 
 #content{
@@ -78,6 +86,7 @@ form p{
 #mdp {
 	width: 40vw;
   padding: 3vh;
+  margin: 1vh 0 1vh 0;
   border: 0px;
   border-radius: 5px;
   background-color: var(--bgbis);
@@ -94,4 +103,10 @@ form p{
 #mdp:focus{
 	background-color: var(--shadow);
 	box-shadow: 0 0 1em var(--shadow);
+}
+
+#message{
+	font-family: Nexa;
+	color: var(--footer);
+	font-size: 2vh;
 }
