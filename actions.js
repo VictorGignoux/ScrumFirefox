@@ -1,10 +1,5 @@
 var isButtonsShown = false;
-
-/*var audios = ["audios/lescheu.mp3"];
-
-var links = ["lescheu"];
-
-const audio = new Audio("audios/lescheu_1.mp3");*/
+var isSoundEnable = false;
 
 const scrum = "341935233539371";
 const abc = "azertyuiopqsdfghjklmwxcvbn";
@@ -118,6 +113,28 @@ function qwack(blop){
     }
 }
 
-function activeListener(){
-    document.getElementById('')
+function playSound(audioName)
+{
+    var audio = document.getElementById(audioName);
+    if(audio && isSoundEnable)
+        audio.play();
+}
+
+function switchSoundState()
+{
+    var enabledSVG = document.getElementById('soundActivation-enabled');
+    var disabledSVG = document.getElementById('soundActivation-disabled');
+
+    if(isSoundEnable)
+    {
+        enabledSVG.style.display = 'none';
+        disabledSVG.style.display = 'block';
+        isSoundEnable = false;
+    }
+    else
+    {
+        enabledSVG.style.display = 'block';
+        disabledSVG.style.display = 'none';
+        isSoundEnable = true;
+    }
 }

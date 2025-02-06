@@ -90,7 +90,7 @@ div#title p{
 	box-shadow: 0 0 1em var(--shadow);
 }
 
-div#content{
+#content{
 	display: flex;
 	flex-direction: row;
 	flex-wrap: wrap;
@@ -98,7 +98,7 @@ div#content{
 	margin: 0 20vw 5vw 20vw;
 }
 
-div#content div{
+#content div{
 	width: 9vw;
 	padding: 0.5vw;
 	margin: 2vw;
@@ -108,7 +108,7 @@ div#content div{
 	border-radius: 10px;
 }
 
-div#content div:hover{
+#content div:hover{
 	margin-top: 1vw;
 	margin-bottom: 3vw;
 	background-color: var(--shadow);
@@ -116,7 +116,7 @@ div#content div:hover{
 	transition: 0.3s;
 }
 
-div#content div a img{
+#content div a img{
 	width: 6vw;
 	height: 6vw;
 	padding: 1vw;
@@ -124,7 +124,7 @@ div#content div a img{
 	color: whitesmoke;
 }
 
-div#content div a p{
+#content div a p{
 	margin: 0;
 	padding: 0;
 	padding-top: 2vh;

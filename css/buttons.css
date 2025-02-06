@@ -88,3 +88,31 @@ button:hover{
 	color: var(--title);
 	transition: 0.3s;
 }
+
+#soundActivation{
+	position: fixed;
+	top: 2vh;
+	left: 2vh;
+	border-radius: 1vh;
+}
+
+#soundActivation button{
+	background-color: transparent;
+}
+
+#soundActivation-disabled{
+	display: block;
+	fill: var(--title);
+	width: 2vw;
+}
+
+#soundActivation-enabled{
+	display: none;
+	fill: var(--title);
+	width: 2vw;
+}
+
+#soundActivation:hover{
+	background-color: rgba(70,70,70,70);
+	margin: 0;
+}
